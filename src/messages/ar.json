@@ -1,0 +1,731 @@
+{
+  "app": {
+    "name": "لوحة تحكم الكنيسة",
+    "shortName": "الكنيسة",
+    "tagline": "نظام إدارة خدمات الكنيسة الأرثوذكسية",
+    "taglineShort": "مجتمع خدمة",
+"heroLine1": "اخدم الكنيسة.",
+"heroLine2": "اهتم بأولادها.",
+"verse": "دَعُوا الأَوْلاَدَ يَأْتُونَ إِلَيَّ وَلَا تَمْنَعُوهُمْ لأَنَّ لِمِثْلِ هَؤُلاَءِ مَلَكُوتَ السَّمَاوَاتِ",
+"verseRef": "متي 19: 14",
+"builtFor": "مبني لمدارس الأحد القبطية الأرثوذكسية"
+  },
+  "nav": {
+    "dashboard": "لوحة التحكم",
+    "receive": "المقبوضات",
+    "spend": "مصروفات الفصول",
+    "members": "الأعضاء",
+    "users": "المستخدمين",
+    "rolesPermissions": "الأدوار والصلاحيات",
+    "profile": "الملف الشخصي",
+    "settings": "الإعدادات",
+    "pointScore": "إعدادات النقاط",
+"stock": "المخزن",
+    "festivals": "المهرجانات",
+    "seasons": "المواسم",
+    "classes": "الفصول",
+    "children": "الأطفال",
+    "attendance": "الحضور والغياب",
+    "budget": "الايرادات/الميزانية",
+    "budgetWithdraw": "المصروفات"
+  },
+  "language": "العربية",
+  "topbar": {
+    "title": "الأدمن",
+    "subtitle": "إدارة الكنيسة",
+    "language": "اللغة",
+    "notifications": "الإشعارات",
+    "profile": "الملف الشخصي",
+    "settings": "الإعدادات",
+    "logout": "تسجيل الخروج",
+    "menu": "القائمة",
+    "noNotifications": "لا توجد طلبات انتظار",
+"pendingApprovals": "طلبات الانتظار",
+"waitingApproval": "في انتظار الموافقة",
+"viewAll": "عرض الكل"
+  },
+  "common": {
+    "goHome": "الرئيسية",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "add": "إضافة",
+    "gender": "النوع",
+"boy": "ولد",
+"girl": "بنت",
+"class": "الفصل",
+"selectClass": "اختر الفصل...",
+"needsSupport": "يحتاج دعم خاص",
+"needsSupportDesc": "سيتم إبلاغ الخدّام للمتابعة.",
+"deleteDialog": {
+  "title": "حذف؟",
+  "permanent": "إجراء دائم",
+  "type": "اكتب",
+  "toConfirm": "للتأكيد",
+  "cancel": "إبقاء",
+  "confirm": "حذف نهائياً"
+},
+    "search": "بحث",
+    "loading": "جاري التحميل...",
+    "noData": "لا توجد بيانات",
+    "confirm": "تأكيد",
+    "back": "رجوع",
+    "next": "التالي",
+    "previous": "السابق",
+    "actions": "إجراءات",
+    "status": "الحالة",
+    "pending": "قيد الانتظار",
+    "approved": "مقبول",
+    "withdrawn": "منسحب",
+    "active": "نشط",
+    "inactive": "غير نشط",
+    "comingSoon": "قريبًا...",
+    "passwordRules": {
+  "minLength": "8 أحرف على الأقل",
+  "uppercase": "حرف كبير واحد",
+  "lowercase": "حرف صغير واحد",
+  "number": "رقم واحد",
+  "symbol": "رمز واحد (!@#$%...)",
+  "weak": "ضعيفة",
+  "medium": "متوسطة",
+  "strong": "قوية",
+  "veryStrong": "قوية جداً"
+}
+
+  },
+  "pages": {
+    "notFound": {
+      "title": "الصفحة غير موجودة",
+      "desc": "الصفحة التي تبحث عنها غير موجودة."
+    },
+    "registerPage": {
+  "title": "إنشاء حساب",
+  "adminTab": "تسجيل كنيسة",
+  "userTab": "الانضمام لكنيسة",
+  "hasAccount": "عندك حساب بالفعل؟"
+},
+    "login": {
+      "title": "تسجيل الدخول",
+      "welcomeBack": "مرحباً بعودتك",
+      "subtitle": "تابع خدمتك مع أغابي.",
+      "noAccount": "ليس لديك حساب؟",
+      "formData": {
+        "username": {
+          "label": "اسم المستخدم",
+          "placeholder": "أدخل اسم المستخدم",
+          "validation": {
+            "required": "اسم المستخدم مطلوب"
+          }
+        },
+        "password": {
+          "label": "كلمة المرور",
+          "placeholder": "أدخل كلمة المرور",
+          "validation": {
+            "required": "كلمة المرور مطلوبة",
+            "validation-msg": "كلمة المرور يجب أن تكون 6 أحرف على الأقل"
+          }
+        },
+        "loginButton": "تسجيل الدخول"
+      },
+      "errorMsg": "بيانات الدخول غير صحيحة",
+      "successMsg": "تم تسجيل الدخول بنجاح!",
+      "logoutSuccessMsg": "تم تسجيل الخروج بنجاح!",
+      "logoutErrorMsg": "فشل تسجيل الخروج"
+    },
+    "register": {
+  "title": "تسجيل كنيسة جديدة",
+  "subtitle": "أنشئ كنيسة جديدة وكن المسؤول عنها",
+  "formData": {
+    "nameOrganization": {
+      "label": "اسم الكنيسة",
+      "placeholder": "مثال: كنيسة السيدة العذراء",
+      "validation": { "required": "اسم الكنيسة مطلوب" }
+    },
+    "name": {
+      "label": "الاسم الكامل",
+      "placeholder": "أدخل اسمك الكامل",
+      "validation": { "required": "الاسم الكامل مطلوب" }
+    },
+    "userName": {
+      "label": "اسم المستخدم",
+      "placeholder": "اختر اسم مستخدم",
+      "validation": { "required": "اسم المستخدم مطلوب" ,"format": "اسم المستخدم يمكن أن يحتوي على حروف وأرقام و _ فقط", "min": "اسم المستخدم يجب أن يكون 3 أحرف على الأقل"}
+    },
+    "email": {
+      "label": "البريد الإلكتروني",
+      "placeholder": "أدخل بريدك الإلكتروني",
+      "validation": { "required": "البريد الإلكتروني مطلوب", "invalid": "أدخل بريد إلكتروني صالح" }
+    },
+    "password": {
+      "label": "كلمة المرور",
+      "placeholder": "اختر كلمة مرور",
+      "validation": {
+  "required": "كلمة المرور مطلوبة",
+  "min": "كلمة المرور يجب أن تكون 8 أحرف على الأقل",
+  "uppercase": "يجب أن تحتوي على حرف كبير",
+  "lowercase": "يجب أن تحتوي على حرف صغير",
+  "number": "يجب أن تحتوي على رقم",
+  "symbol": "يجب أن تحتوي على رمز (!@#$%...)"
+}  },
+    "confirmPassword": {
+      "label": "تأكيد كلمة المرور",
+      "placeholder": "أعد إدخال كلمة المرور",
+      "validation": { "required": "تأكيد كلمة المرور مطلوب", "match": "كلمتا المرور غير متطابقتين" }
+    },
+    "submitButton": "تسجيل الكنيسة"
+  },
+  "hasAccount": "عندك حساب بالفعل؟",
+  "successMsg": "تم تسجيل الكنيسة بنجاح!",
+  "errorMsg": "فشل التسجيل"
+},
+
+"registerUser": {
+  "title": "الانضمام لكنيسة",
+  "cameraError": "تم رفض الوصول للكاميرا. اسمح بإذن الكاميرا أو أدخل المعرّف يدويًا.",
+  "subtitle": "امسح الـ QR أو أدخل معرّف الكنيسة للانضمام",
+  "scanQr": "مسح QR Code",
+  "or": "أو",
+  "orgDetected": "تم التعرف على الكنيسة!",
+  "qrSuccess": "تم مسح الـ QR بنجاح!",
+  "formData": {
+    "organizationId": {
+      "label": "معرّف الكنيسة",
+      "placeholder": "أدخل معرّف الكنيسة",
+      "validation": { "required": "معرّف الكنيسة مطلوب" }
+    },
+    "name": {
+      "label": "الاسم الكامل",
+      "placeholder": "أدخل اسمك الكامل",
+      "validation": { "required": "الاسم الكامل مطلوب" }
+    },
+    "userName": {
+      "label": "اسم المستخدم",
+      "placeholder": "اختر اسم مستخدم",
+      "validation": { "required": "اسم المستخدم مطلوب", "min": "اسم المستخدم يجب أن يكون 3 أحرف على الأقل" }
+    },
+    "email": {
+      "label": "البريد الإلكتروني",
+      "placeholder": "أدخل بريدك الإلكتروني",
+      "validation": { "required": "البريد الإلكتروني مطلوب", "invalid": "أدخل بريد إلكتروني صالح" }
+    },
+    "password": {
+      "label": "كلمة المرور",
+      "placeholder": "اختر كلمة مرور",
+      "validation": { "required": "كلمة المرور مطلوبة", "min": "كلمة المرور يجب أن تكون 6 أحرف على الأقل" }
+    },
+    "confirmPassword": {
+      "label": "تأكيد كلمة المرور",
+      "placeholder": "أعد إدخال كلمة المرور",
+      "validation": { "required": "تأكيد كلمة المرور مطلوب", "match": "كلمتا المرور غير متطابقتين" }
+    },
+    "submitButton": "الانضمام للكنيسة"
+  },
+  "hasAccount": "عندك حساب بالفعل؟",
+  "successMsg": "تم التسجيل بنجاح! في انتظار موافقة المسؤول.",
+  "errorMsg": "فشل التسجيل"
+},
+"classes": {
+  "title": "إدارة الفصول",
+  "desc": "إدارة الفصول وتعيين الخدّام",
+  "empty": "لا توجد فصول. أضف أول فصل للبدء.",
+  "addBtn": "إضافة فصل",
+  "serialNo": "الرقم التسلسلي",
+  "add": {
+    "title": "إضافة فصل جديد",
+    "name": "اسم الفصل",
+    "namePlaceholder": "مثال: سنة أولى ابتدائي",
+    "serialNo": "الرقم التسلسلي",
+    "serialNoPlaceholder": "مثال: 30",
+    "submit": "إنشاء الفصل"
+  },
+  "edit": {
+    "title": "تعديل الفصل",
+    "submit": "حفظ التغييرات"
+  },
+  "delete": {
+    "title": "حذف الفصل",
+    "desc": "هل أنت متأكد من حذف \"{name}\"؟ لا يمكن التراجع.",
+    "confirm": "نعم، حذف",
+    "cancel": "إلغاء"
+  },
+  "classUsers": {
+    "title": "الخدّام",
+    "add": "إضافة",
+    "empty": "لا يوجد خدّام معيّنين",
+    "addTitle": "إضافة خادم للفصل",
+    "selectUser": "اختر المستخدم",
+    "selectPlaceholder": "اختر مستخدم...",
+    "addSubmit": "إضافة الخادم"
+  }
+},
+"budget": {
+  "title": "إدارة الميزانية",
+  "desc": "تتبع الإيرادات والمساهمات المالية",
+  "empty": "لا توجد مدخلات بعد.",
+  "noResults": "لا توجد نتائج تطابق البحث.",
+  "searchPlaceholder": "ابحث بالاسم أو الوصف...",
+  "addBtn": "إضافة مدخل",
+  "totalIncome": "إجمالي الإيرادات",
+  "currency": "ج.م",
+  "entries": "مدخلات",
+  "validation": {
+    "volunteerNameRequired": "اسم المساهم مطلوب",
+    "volunteerNameMin": "الاسم يجب أن يكون حرفين على الأقل",
+    "descriptionRequired": "الوصف مطلوب",
+    "descriptionMin": "الوصف يجب أن يكون 3 أحرف على الأقل",
+    "moneyRequired": "المبلغ مطلوب",
+    "moneyPositive": "المبلغ يجب أن يكون رقم موجب",
+    "moneyMin": "المبلغ يجب أن يكون 1 على الأقل"
+  },
+  "add": {
+    "title": "إضافة مدخل مالي",
+    "volunteerName": "اسم المساهم",
+    "volunteerNamePlaceholder": "مثال: خدمة السامري الصالح",
+    "description": "الوصف",
+    "descriptionPlaceholder": "ما هو الغرض من هذا المبلغ؟",
+    "moneyAdd": "المبلغ (ج.م)",
+    "moneyAddPlaceholder": "مثال: 5000",
+    "submit": "إضافة المدخل"
+  },
+  "edit": {
+    "title": "تعديل المدخل المالي",
+    "submit": "حفظ التغييرات"
+  },
+  "delete": {
+    "title": "حذف المدخل",
+    "desc": "هل أنت متأكد من حذف المدخل الخاص بـ \"{name}\"؟",
+    "confirm": "نعم، حذف",
+    "cancel": "إلغاء"
+  },
+  "table": {
+    "volunteerName": "المساهم",
+    "description": "الوصف",
+    "amount": "المبلغ",
+    "admin": "أضافه",
+    "date": "التاريخ",
+    "actions": "إجراءات"
+  }
+},
+"budgetWithdraw": {
+  "title": "إدارة المصروفات",
+  "desc": "تتبع المسحوبات والمصروفات",
+  "empty": "لا توجد مصروفات مسجلة.",
+  "noResults": "لا توجد نتائج تطابق البحث.",
+  "searchPlaceholder": "ابحث بالاسم أو الوصف...",
+  "addBtn": "إضافة مصروف",
+  "totalExpenses": "إجمالي المصروفات",
+  "currency": "ج.م",
+  "entries": "مدخلات",
+  "validation": {
+    "volunteerNameRequired": "اسم المصروف مطلوب",
+    "volunteerNameMin": "الاسم يجب أن يكون حرفين على الأقل",
+    "descriptionRequired": "الوصف مطلوب",
+    "descriptionMin": "الوصف يجب أن يكون 3 أحرف على الأقل",
+    "withdrawRequired": "المبلغ مطلوب",
+    "withdrawPositive": "المبلغ يجب أن يكون رقم موجب",
+    "withdrawMin": "المبلغ يجب أن يكون 1 على الأقل",
+    "classRequired": "الفصل مطلوب"
+  },
+  "add": {
+    "title": "إضافة مصروف",
+    "volunteerName": "اسم المصروف",
+    "volunteerNamePlaceholder": "مثال: شراء مستلزمات",
+    "description": "الوصف",
+    "descriptionPlaceholder": "ما هو الغرض من هذا المصروف؟",
+    "withdraw": "المبلغ (ج.م)",
+    "withdrawPlaceholder": "مثال: 2000",
+    "class": "الفصل",
+    "classPlaceholder": "اختر الفصل...",
+    "submit": "إضافة المصروف"
+  },
+  "edit": {
+    "title": "تعديل المصروف",
+    "submit": "حفظ التغييرات"
+  },
+  "delete": {
+    "title": "حذف المصروف",
+    "desc": "هل أنت متأكد من حذف المصروف الخاص بـ \"{name}\"؟",
+    "confirm": "نعم، حذف",
+    "cancel": "إلغاء"
+  },
+  "table": {
+    "volunteerName": "اسم المصروف",
+    "description": "الوصف",
+    "amount": "المبلغ",
+    "class": "الفصل",
+    "admin": "أضافه",
+    "date": "التاريخ",
+    "actions": "إجراءات"
+  }
+},
+"festivalModule": {
+  "title": "إدارة المهرجانات",
+  "desc": "إدارة مهرجانات الكنيسة والفرق والأعضاء والنقاط",
+  "tabs": {
+    "festivals": "المهرجانات",
+    "classifications": "التصنيفات",
+    "teams": "الفرق",
+    "members": "الأعضاء",
+    "points": "النقاط"
+  },
+  "common": {
+    "cancel": "إلغاء",
+    "save": "حفظ",
+    "actions": "إجراءات"
+  },
+  "festivals": {
+    "label": "مهرجانات الكنيسة",
+    "search": "ابحث عن مهرجان...",
+    "add": "إضافة مهرجان",
+    "edit": "تعديل المهرجان",
+    "name": "اسم المهرجان",
+    "namePlaceholder": "مثال: احتفال عيد الميلاد",
+    "empty": "لا توجد مهرجانات.",
+    "deleteDesc": "هل أنت متأكد من حذف \"{name}\"؟"
+  },
+  "classifications": {
+    "label": "التصنيفات",
+    "search": "ابحث عن تصنيف...",
+    "add": "إضافة تصنيف",
+    "edit": "تعديل التصنيف",
+    "name": "اسم التصنيف",
+    "namePlaceholder": "مثال: فئة عمرية أ",
+    "empty": "لا توجد تصنيفات.",
+    "deleteDesc": "هل أنت متأكد من حذف \"{name}\"؟"
+  },
+  "teams": {
+    "label": "فرق المهرجان",
+    "search": "ابحث عن فريق...",
+    "add": "إضافة فريق",
+    "edit": "تعديل الفريق",
+    "name": "اسم الفريق",
+    "namePlaceholder": "مثال: فريق ألفا",
+    "festival": "المهرجان",
+    "selectFestival": "اختر المهرجان...",
+    "classification": "التصنيف",
+    "selectClassification": "اختر التصنيف...",
+    "empty": "لا توجد فرق.",
+    "winner": "فائز",
+    "markWinner": "تحديد فائز",
+    "deleteDesc": "هل أنت متأكد من حذف فريق \"{name}\"؟"
+  },
+  "members": {
+    "selectTeam": "اختر الفريق",
+    "chooseTeam": "اختر فريق...",
+    "selectUser": "اختر مستخدم...",
+    "empty": "لا يوجد أعضاء في هذا الفريق.",
+    "leader": "قائد"
+  },
+  "points": {
+    "name": "الاسم",
+    "topic": "موضوع",
+    "preparation": "تحضير",
+    "visit": "زيارة",
+    "classAttend": "فصل",
+    "meeting": "اجتماع",
+    "festivalWin": "فوز",
+    "function": "وظيفة",
+    "leadWin": "قائد",
+    "status": "الحالة",
+    "active": "نشط",
+    "activate": "تفعيل",
+    "empty": "لا توجد إعدادات نقاط."
+  }
+},
+"pointScore": {
+  "title": "إعدادات النقاط", "desc": "تكوين نظام النقاط للمهرجانات", "empty": "لا توجد إعدادات.", "addBtn": "إضافة إعداد", "active": "نشط", "activate": "تفعيل", "deleteDesc": "حذف إعداد \"{name}\"؟",
+  "add": { "title": "إضافة إعداد", "subtitle": "إعداد جديد", "submit": "إضافة" },
+  "edit": { "title": "تعديل الإعداد", "submit": "حفظ" },
+  "common": { "cancel": "إلغاء" },
+ "searchPlaceholder": "بحث عن إعدادات...",
+"noResults": "لا توجد نتائج.",
+"configs": "إعدادات",
+  "fields": { "name": "اسم الإعداد", "namePlaceholder": "مثال: موسم 2026", "topic": "موضوع", "preparation": "تحضير", "visit": "زيارة", "classAttend": "فصل", "meeting": "اجتماع", "festivalWin": "فوز", "function": "وظيفة", "leadWin": "قائد فائز" }
+},
+"stock": {
+  "title": "إدارة المخزن", "desc": "إدارة المواد والمستلزمات", "empty": "لا توجد مواد.", "noResults": "لا توجد نتائج.", "searchPlaceholder": "بحث...", "addBtn": "إضافة مادة", "items": "مواد", "currency": "ج.م",
+  "adjustIncrease": "أدخل الكمية للإضافة:", "adjustDecrease": "أدخل الكمية للإزالة:", "deleteDesc": "حذف مادة \"{name}\"؟",
+  "add": { "title": "إضافة مادة", "subtitle": "مادة جديدة", "submit": "إضافة" },
+  "edit": { "title": "تعديل المادة", "submit": "حفظ" },
+  "common": { "cancel": "إلغاء" },
+  "fields": { "itemName": "اسم المادة", "itemNamePlaceholder": "مثال: كراسات", "amount": "الكمية", "price": "السعر (ج.م)" },
+  "table": { "item": "المادة", "amount": "الكمية", "price": "السعر", "adjust": "تعديل", "actions": "إجراءات" }
+},
+    "dashboard": {
+      "title": "لوحة التحكم",
+      "subtitle": "نظرة عامة على إدارة الكنيسة",
+      "totalMembers": "إجمالي الأعضاء",
+      "pendingApprovals": "في انتظار الموافقة",
+      "totalUsers": "إجمالي المستخدمين",
+      "activeRoles": "الأدوار النشطة"
+    },
+    "members": {
+      "title": "إدارة الأعضاء",
+      "desc": "إدارة أعضاء الكنيسة وحالتهم",
+      "comingSoon": "إدارة الأعضاء قريبًا..."
+    },
+    "users": {
+  "title": "إدارة المستخدمين",
+  "desc": "إدارة المستخدمين والموافقات والأدوار",
+  "pendingTitle": "في انتظار الموافقة",
+  "approvedTitle": "المستخدمين المعتمدين",
+  "noPending": "لا يوجد مستخدمين في الانتظار",
+  "noApproved": "لا يوجد مستخدمين معتمدين",
+  "approve": "موافقة",
+  "removeApproval": "إزالة",
+  "table": {
+    "name": "الاسم",
+    "username": "اسم المستخدم",
+    "roles": "الأدوار",
+    "addRole": "إضافة دور",
+    "actions": "إجراءات"
+  },
+  "removeDialog": {
+    "title": "إزالة الموافقة",
+    "desc": "هل أنت متأكد من إزالة الموافقة لهذا المستخدم؟ سيحتاج للموافقة مرة أخرى.",
+    "confirm": "نعم، إزالة",
+    "cancel": "إلغاء"
+  }
+},
+    "rolesPermissions": {
+      "title": "الأدوار والصلاحيات",
+      "desc": "إدارة الأدوار والتحكم في الوصول",
+      "comingSoon": "إدارة الأدوار قريبًا..."
+    },
+    "profile": {
+  "title": "ملف الكنيسة",
+  "desc": "إدارة معلومات الكنيسة ومشاركة رمز QR",
+  "error": "فشل تحميل بيانات الملف",
+  "orgName": {
+    "title": "اسم الكنيسة"
+  },
+  "image": {
+  "title": "شعار الكنيسة",
+  "upload": "رفع",
+  "delete": "حذف",
+  "change": "تغيير الصورة",
+  "uploading": "جاري الرفع...",
+  "dragDrop": "اسحب الصورة هنا أو اضغط للرفع",
+  "dropHere": "أفلت الصورة هنا!",
+  "formats": "PNG, JPG, WEBP (حد أقصى 5MB)",
+  "invalidType": "من فضلك ارفع ملف صورة",
+  "tooLarge": "حجم الصورة يجب أن يكون أقل من 5MB",
+  "uploadSuccess": "تم رفع الصورة بنجاح!",
+  "deleteSuccess": "تم حذف الصورة بنجاح!"
+},
+  "qr": {
+    "title": "رمز QR للكنيسة",
+    "description": "شارك رمز QR ده مع الأعضاء للانضمام لكنيستك",
+    "copy": "نسخ الرابط",
+    "download": "تحميل",
+    "share": "مشاركة",
+    "copied": "تم نسخ الرابط!",
+    "copyError": "فشل نسخ الرابط",
+    "shareText": "انضم لكنيستنا من خلال هذا الرابط"
+  },
+  "userProfile": {
+  "title": "ملفي الشخصي",
+  "desc": "إدارة معلوماتك الشخصية",
+  "username": "اسم المستخدم",
+  "name": "الاسم الكامل",
+  "email": "البريد الإلكتروني",
+  "roles": "الأدوار",
+  "photo": "الصورة الشخصية"
+}
+},
+"spend": {
+  "title": "المصروفات", "desc": "تتبع المصاريف", "empty": "لا توجد مدخلات.", "noResults": "لا توجد نتائج.", "searchPlaceholder": "بحث...", "addBtn": "إضافة مصروف", "totalSpent": "إجمالي المصروفات", "currency": "ج.م", "entries": "مدخلات",
+  "add": { "title": "إضافة مصروف", "subtitle": "مصروف جديد" },
+  "edit": { "title": "تعديل المصروف", "subtitle": "تحديث" },
+  "form": { "sendTo": "مُرسل إلى", "sendToPlaceholder": "مثال: مورّد", "description": "الوصف", "descriptionPlaceholder": "تفاصيل...", "moneyAmount": "المبلغ (ج.م)", "moneyAmountPlaceholder": "مثال: 2000", "cancel": "إلغاء", "save": "حفظ", "submit": "إضافة" },
+  "delete": { "desc": "حذف المصروف إلى \"{name}\"؟" },
+  "table": { "sendTo": "مُرسل إلى", "description": "الوصف", "amount": "المبلغ", "class": "الفصل", "date": "التاريخ", "actions": "إجراءات" }
+},
+"children": {
+  "title": "إدارة الأطفال",
+  "desc": "إدارة سجلات الأطفال وتوزيعهم على الفصول",
+  "empty": "لا يوجد أطفال مضافين.",
+  "noResults": "لا يوجد أطفال تطابق البحث.",
+  "searchPlaceholder": "ابحث باسم الطفل...",
+  "filterAll": "الكل",
+"filterBoys": "الأولاد",
+"filterGirls": "البنات",
+"filterNeedy": "يحتاج دعم",
+"countLabel": "طفل",
+"sessions": "حصص",
+  "addBtn": "إضافة طفل",
+  "count": "{count} طفل",
+  "boy": "ولد",
+  "girl": "بنت",
+  "needy": "يحتاج دعم",
+  "add": {
+    "title": "إضافة طفل جديد",
+    "name": "اسم الطفل",
+    "namePlaceholder": "أدخل اسم الطفل",
+    "gender": "النوع",
+    "boy": "ولد",
+    "girl": "بنت",
+    "class": "الفصل",
+    "subtitle": "تسجيل طالب جديد",
+"cancel": "إلغاء",
+"typeNeedyDesc": "سيتم إبلاغ الخدّام للمتابعة.",
+    "classPlaceholder": "اختر الفصل...",
+    "description": "وصف / ملاحظات",
+    "descriptionPlaceholder": "أي ملاحظات عن الطفل...",
+    "typeNeedy": "هذا الطفل يحتاج دعم خاص",
+    "submit": "إضافة الطفل"
+  },
+  "edit": {
+    "title": "تعديل بيانات الطفل",
+    "submit": "حفظ التغييرات"
+  },
+  "delete": {
+    "title": "حذف الطفل",
+    "desc": "هل أنت متأكد من حذف \"{name}\"؟ لا يمكن التراجع.",
+    "confirm": "نعم، حذف",
+    "cancel": "إلغاء",
+    "permanent": "إجراء دائم",
+"descDetailed": "أنت على وشك حذف {name}. سيتم حذف سجل الحضور أيضاً. لا يمكن التراجع عن هذا الإجراء.",
+"typeConfirm": "اكتب",
+"toConfirm": "للتأكيد"
+  }
+},
+    "settings": {
+      "title": "الإعدادات",
+      "desc": "إعدادات النظام",
+      "comingSoon": "صفحة الإعدادات قريبًا..."
+    },
+    "seasons": {
+  "title": "إدارة المواسم",
+  "desc": "إدارة مواسم الخدمة — كل موسم مطلوب لجميع العمليات",
+  "empty": "لا توجد مواسم. أضف أول موسم للبدء.",
+  "active": "نشط",
+  "addBtn": "إضافة موسم",
+  "editBtn": "تعديل",
+  "activateBtn": "تفعيل",
+  "deleteBtn": "حذف",
+  "add": {
+    "title": "إضافة موسم جديد",
+    "name": "اسم الموسم",
+    "namePlaceholder": "مثال: كنيسة الست دميانة ابتدائي 2026",
+    "password": "كلمة مرور الموسم",
+    "passwordPlaceholder": "أدخل كلمة مرور قوية",
+    "submit": "إنشاء الموسم"
+  },
+  "edit": {
+    "title": "تعديل الموسم",
+    "password": "كلمة المرور الجديدة",
+    "passwordPlaceholder": "أدخل كلمة مرور جديدة",
+    "submit": "حفظ التغييرات"
+  },
+  "activate": {
+    "title": "تفعيل الموسم",
+    "desc": "تفعيل \"{name}\" كموسم حالي؟ كل العمليات ستستخدم هذا الموسم.",
+    "password": "كلمة مرور الموسم",
+    "passwordPlaceholder": "أدخل كلمة مرور الموسم",
+    "submit": "تفعيل الموسم"
+  },
+  "delete": {
+    "title": "حذف الموسم",
+    "desc": "هل أنت متأكد من حذف \"{name}\"؟ لا يمكن التراجع.",
+    "confirm": "نعم، حذف",
+    "cancel": "إلغاء"
+  }
+},
+"receive": {
+  "title": "المقبوضات",
+  "desc": "تتبع الأموال المستلمة من الفصول والخدمات",
+  "empty": "لا توجد مقبوضات مسجلة.",
+  "noResults": "لا توجد نتائج تطابق البحث.",
+  "searchPlaceholder": "ابحث بالاسم أو الوصف...",
+  "addBtn": "إضافة مدخل",
+  "totalReceived": "إجمالي المقبوضات",
+  "currency": "ج.م",
+  "entries": "مدخلات",
+  "add": {
+    "title": "إضافة مقبوضات",
+    "subtitle": "مدخل جديد",
+    "recieveFrom": "مستلم من",
+    "recieveFromPlaceholder": "مثال: تحصيل فصل أ",
+    "description": "الوصف",
+    "descriptionPlaceholder": "ما الغرض من هذا المبلغ؟",
+    "moneyAmount": "المبلغ (ج.م)",
+    "moneyAmountPlaceholder": "مثال: 500",
+    "cancel": "إلغاء",
+    "submit": "إضافة المدخل"
+  },
+  "edit": {
+    "title": "تعديل المدخل",
+    "submit": "حفظ التغييرات"
+  },
+  "delete": {
+    "desc": "هل أنت متأكد من حذف المدخل الخاص بـ \"{name}\"؟"
+  },
+  "table": {
+    "recieveFrom": "مستلم من",
+    "description": "الوصف",
+    "amount": "المبلغ",
+    "class": "الفصل",
+    "date": "التاريخ",
+    "actions": "إجراءات"
+  }
+}
+,
+"attendance": {
+  "title": "الحضور والغياب",
+  "desc": "تسجيل الحضور اليومي للأطفال",
+  "empty": "لا يوجد أطفال.",
+  "noResults": "لا يوجد أطفال تطابق البحث.",
+  "searchPlaceholder": "ابحث باسم الطفل...",
+  "allClasses": "كل الفصول",
+  "present": "حاضر",
+  "ofClass": "من الفصل",
+"followUp": "متابعة بعد الحصة",
+"stillToRecord": "لم يتم تسجيلهم",
+"students": "طالب",
+"sortedByName": "مرتب بالاسم",
+"backToAttendance": "العودة للحضور",
+"childNotFound": "الطفل غير موجود",
+"needsSupport": "يحتاج دعم",
+"detail": {
+  "totalSessions": "إجمالي الحصص",
+  "present": "حاضر",
+  "absent": "غائب",
+  "rate": "نسبة الحضور",
+  "history": "سجل الحضور",
+  "noRecords": "لا يوجد سجل حضور"
+},
+  "absent": "غائب",
+  "unmarked": "غير محدد",
+  "presentLabel": "حاضر",
+  "absentLabel": "غائب",
+  "tapToMark": "اضغط للتحديد",
+  "notMarked": "غير محدد",
+  "markAllPresent": "الكل حاضر",
+  "markAllAbsent": "الكل غائب",
+  "saveAll": "حفظ الحضور",
+  "noChanges": "لا توجد تغييرات للحفظ.",
+  "boy": "ولد",
+  "girl": "بنت",
+  "prev": "السابق",
+  "next": "التالي",
+  "table": {
+    "name": "اسم الطفل",
+    "class": "الفصل",
+    "gender": "النوع",
+    "status": "الحالة",
+    "action": "حفظ"
+  }
+},
+    "notifications": {
+      "pagination": {
+        "prev": "السابق",
+        "next": "التالي"
+      }
+    },
+    "listings": {
+      "searchPlaceholder": "بحث..."
+    }
+  }
+}

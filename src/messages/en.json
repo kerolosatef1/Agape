@@ -1,0 +1,732 @@
+{
+  "app": {
+    "name": "Church Admin Dashboard",
+    "shortName": "ChurchAdmin",
+    "tagline": "Orthodox Church Service Management System",
+    "taglineShort": "A Community of Service",
+"heroLine1": "Serve the Church.",
+"heroLine2": "Care for its children.",
+"verse": "Let the children come to me. Don’t stop them! For the Kingdom of Heaven belongs to those who are like these children",
+"verseRef": "Mat 19:14",
+"builtFor": "Built for Coptic Orthodox Sunday schools"
+    
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "receive": "Receivables",
+    "members": "Members",
+    "users": "Users",
+    "pointScore": "Points Config",
+"stock": "Stock",
+    "rolesPermissions": "Roles & Permissions",
+    "profile": "Profile",
+    "festivals": "Festivals",
+    "settings": "Settings",
+    "spend": "Expenses Classes",
+    "seasons": "Seasons",
+    "classes": "Classes",
+    "children": "Children",
+    "attendance": "Attendance",
+    "budget": "Budget",
+    "budgetWithdraw": "Expenses"
+  },
+  "language": "English",
+  "topbar": {
+    "title": "Admin",
+    "subtitle": "Manage church",
+    "language": "Language",
+    "notifications": "Notifications",
+    "profile": "Profile",
+    "settings": "Settings",
+    "logout": "Logout",
+    "menu": "Menu",
+    "noNotifications": "No pending approvals",
+"pendingApprovals": "Pending Approvals",
+"waitingApproval": "Waiting for approval",
+"viewAll": "View all"
+  },
+  "common": {
+    "goHome": "Go Home",
+    "gender": "Gender",
+"boy": "Boy",
+"girl": "Girl",
+"class": "Class",
+"selectClass": "Select a class...",
+"needsSupport": "Mark as needing extra support",
+"needsSupportDesc": "Servants will be notified to follow up.",
+"deleteDialog": {
+  "title": "Delete?",
+  "permanent": "Permanent Action",
+  "type": "Type",
+  "toConfirm": "to confirm",
+  "cancel": "Keep",
+  "confirm": "Delete permanently"
+},
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "search": "Search",
+    "loading": "Loading...",
+    "noData": "No data found",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "actions": "Actions",
+    "status": "Status",
+    "pending": "Pending",
+    "approved": "Approved",
+    "withdrawn": "Withdrawn",
+    "active": "Active",
+    "inactive": "Inactive",
+    "comingSoon": "Coming soon...",
+    "passwordRules": {
+  "minLength": "At least 8 characters",
+  "uppercase": "One uppercase letter",
+  "lowercase": "One lowercase letter",
+  "number": "One number",
+  "symbol": "One symbol (!@#$%...)",
+  "weak": "Weak",
+  "medium": "Medium",
+  "strong": "Strong",
+  "veryStrong": "Very strong"
+}
+  },
+  "pages": {
+    "notFound": {
+      "title": "Page Not Found",
+      "desc": "The page you're looking for doesn't exist."
+    },
+    "login": {
+      "title": "Sign In",
+      "welcomeBack": "Welcome Back",
+      "subtitle": "Continue serving with Agápē.",
+      "noAccount": "Don't have an account?",
+      "formData": {
+        "username": {
+          "label": "Username",
+          "placeholder": "Enter your username",
+          "validation": {
+            "required": "Username is required"
+          }
+        },
+        "password": {
+          "label": "Password",
+          "placeholder": "Enter your password",
+          "validation": {
+            "required": "Password is required",
+            "validation-msg": "Password must be at least 6 characters"
+          }
+        },
+        "loginButton": "Sign In"
+      },
+      "errorMsg": "Invalid credentials",
+      "successMsg": "Login successful!",
+      "logoutSuccessMsg": "Logged out successfully!",
+      "logoutErrorMsg": "Failed to logout"
+    },
+    "registerPage": {
+  "title": "Create an account",
+  "adminTab": "Register Church",
+  "userTab": "Join Church",
+  "hasAccount": "Already serving?"
+},
+    "register": {
+  "title": "Register Organization",
+  "subtitle": "Create a new church organization and become the admin",
+  "formData": {
+    "nameOrganization": {
+      "label": "Organization Name",
+      "placeholder": "e.g. St. Mary's Church",
+      "validation": { "required": "Organization name is required" }
+    },
+    "name": {
+      "label": "Your Full Name",
+      "placeholder": "Enter your full name",
+      "validation": { "required": "Full name is required" }
+    },
+    "userName": {
+      "label": "Username",
+      "placeholder": "Choose a username",
+      "validation": { "required": "Username is required","format": "Username can only contain letters, numbers, and underscores", "min": "Username must be at least 3 characters" }
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "Enter your email",
+      "validation": { "required": "Email is required", "invalid": "Please enter a valid email" }
+    },
+    "password": {
+      "label": "Password",
+      "placeholder": "Choose a password",
+     "validation": { 
+  "required": "Password is required", 
+  "min": "Password must be at least 8 characters",
+  "uppercase": "Must contain an uppercase letter",
+  "lowercase": "Must contain a lowercase letter",
+  "number": "Must contain a number",
+  "symbol": "Must contain a symbol (!@#$%...)"
+}  },
+    "confirmPassword": {
+      "label": "Confirm Password",
+      "placeholder": "Confirm your password",
+      "validation": { "required": "Please confirm your password", "match": "Passwords do not match" }
+    },
+    "submitButton": "Register Organization"
+  },
+  "hasAccount": "Already have an account?",
+  "successMsg": "Organization registered successfully!",
+  "errorMsg": "Registration failed"
+},
+"registerUser": {
+  "title": "Join a Church",
+  "cameraError": "Camera access denied. Please allow camera permission or enter the ID manually.",
+  "subtitle": "Scan the QR code or enter the church ID to join",
+  "scanQr": "Scan QR Code",
+  "or": "OR",
+  "orgDetected": "Church ID detected!",
+  "qrSuccess": "QR Code scanned successfully!",
+  "formData": {
+    "organizationId": {
+      "label": "Church ID",
+      "placeholder": "Enter the church ID",
+      "validation": { "required": "Church ID is required" }
+    },
+    "name": {
+      "label": "Your Full Name",
+      "placeholder": "Enter your full name",
+      "validation": { "required": "Full name is required" }
+    },
+    "userName": {
+      "label": "Username",
+      "placeholder": "Choose a username",
+      "validation": { "required": "Username is required","format": "Username can only contain letters, numbers, and underscores", "min": "Username must be at least 3 characters" }
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "Enter your email",
+      "validation": { "required": "Email is required", "invalid": "Please enter a valid email" }
+    },
+    "password": {
+      "label": "Password",
+      "placeholder": "Choose a password",
+      "validation": { "required": "Password is required", "min": "Password must be at least 6 characters" }
+    },
+    "confirmPassword": {
+      "label": "Confirm Password",
+      "placeholder": "Confirm your password",
+      "validation": { "required": "Please confirm your password", "match": "Passwords do not match" }
+    },
+    "submitButton": "Join Church"
+  },
+  "hasAccount": "Already have an account?",
+  "successMsg": "Registration successful! Waiting for admin approval.",
+  "errorMsg": "Registration failed"
+},
+    "dashboard": {
+      "title": "Dashboard",
+      "subtitle": "Overview of your church management",
+      "totalMembers": "Total Members",
+      "pendingApprovals": "Pending Approvals",
+      "totalUsers": "Total Users",
+      "activeRoles": "Active Roles"
+    },
+    "pointScore": {
+  "title": "Points Configuration", "desc": "Configure scoring system for festivals", "empty": "No configurations yet.", "addBtn": "Add Config", "active": "Active", "activate": "Activate", "deleteDesc": "Delete config \"{name}\"?",
+  "add": { "title": "Add Config", "subtitle": "New Score Config", "submit": "Add" },
+  "searchPlaceholder": "Search configurations...",
+"noResults": "No results found.",
+"configs": "configs",
+  "edit": { "title": "Edit Config", "submit": "Save" },
+  "common": { "cancel": "Cancel" },
+  "fields": { "name": "Config Name", "namePlaceholder": "e.g. Season 2026", "topic": "Topic", "preparation": "Prep", "visit": "Visit", "classAttend": "Class", "meeting": "Meeting", "festivalWin": "Win", "function": "Func", "leadWin": "Lead Win" }
+},
+"stock": {
+  "title": "Stock Management", "desc": "Manage inventory items", "empty": "No items yet.", "noResults": "No results.", "searchPlaceholder": "Search items...", "addBtn": "Add Item", "items": "items", "currency": "EGP",
+  "adjustIncrease": "Enter amount to add:", "adjustDecrease": "Enter amount to remove:", "deleteDesc": "Delete item \"{name}\"?",
+  "add": { "title": "Add Item", "subtitle": "New Item", "submit": "Add" },
+  "edit": { "title": "Edit Item", "submit": "Save" },
+  "common": { "cancel": "Cancel" },
+  "fields": { "itemName": "Item Name", "itemNamePlaceholder": "e.g. Notebooks", "amount": "Quantity", "price": "Price (EGP)" },
+  "table": { "item": "Item", "amount": "Qty", "price": "Price", "adjust": "Adjust", "actions": "Actions" }
+},
+"spend": {
+  "title": "Expenses", "desc": "Track spending and expenses", "empty": "No entries yet.", "noResults": "No results.", "searchPlaceholder": "Search...", "addBtn": "Add Expense", "totalSpent": "Total Spent", "currency": "EGP", "entries": "entries",
+  "add": { "title": "Add Expense", "subtitle": "New Expense" },
+  "edit": { "title": "Edit Expense", "subtitle": "Update" },
+  "form": { "sendTo": "Sent To", "sendToPlaceholder": "e.g. Supplier", "description": "Description", "descriptionPlaceholder": "Details...", "moneyAmount": "Amount (EGP)", "moneyAmountPlaceholder": "e.g. 2000", "cancel": "Cancel", "save": "Save", "submit": "Add" },
+  "delete": { "desc": "Delete expense to \"{name}\"?" },
+  "table": { "sendTo": "Sent To", "description": "Description", "amount": "Amount", "class": "Class", "date": "Date", "actions": "Actions" }
+},
+    "classes": {
+  "title": "Classes Management",
+  "desc": "Manage classes and assign servants",
+  "empty": "No classes yet. Add your first class to get started.",
+  "addBtn": "Add Class",
+  "serialNo": "Serial No",
+  "add": {
+    "title": "Add New Class",
+    "name": "Class Name",
+    "namePlaceholder": "e.g. First Grade Primary",
+    "serialNo": "Serial Number",
+    "serialNoPlaceholder": "e.g. 30",
+    "submit": "Create Class"
+  },
+  "edit": {
+    "title": "Edit Class",
+    "submit": "Save Changes"
+  },
+  "delete": {
+    "title": "Delete Class",
+    "desc": "Are you sure you want to delete \"{name}\"? This cannot be undone.",
+    "confirm": "Yes, Delete",
+    "cancel": "Cancel"
+  },
+  "classUsers": {
+    "title": "Servants",
+    "add": "Add",
+    "empty": "No servants assigned yet",
+    "addTitle": "Add Servant to Class",
+    "selectUser": "Select User",
+    "selectPlaceholder": "Choose a user...",
+    "addSubmit": "Add Servant"
+  }
+},
+"budget": {
+  "title": "Budget Management",
+  "desc": "Track income and financial contributions",
+  "empty": "No budget entries yet.",
+  "noResults": "No entries match your search.",
+  "searchPlaceholder": "Search by name or description...",
+  "addBtn": "Add Entry",
+  "totalIncome": "Total Income",
+  "currency": "EGP",
+  "entries": "entries",
+  "validation": {
+    "volunteerNameRequired": "Contributor name is required",
+    "volunteerNameMin": "Name must be at least 2 characters",
+    "descriptionRequired": "Description is required",
+    "descriptionMin": "Description must be at least 3 characters",
+    "moneyRequired": "Amount is required",
+    "moneyPositive": "Amount must be a positive number",
+    "moneyMin": "Amount must be at least 1"
+  },
+  "add": {
+    "title": "Add Budget Entry",
+    "volunteerName": "Contributor Name",
+    "volunteerNamePlaceholder": "e.g. Good Samaritan Service",
+    "description": "Description",
+    "descriptionPlaceholder": "What is this payment for?",
+    "moneyAdd": "Amount (EGP)",
+    "moneyAddPlaceholder": "e.g. 5000",
+    "submit": "Add Entry"
+  },
+  "edit": {
+    "title": "Edit Budget Entry",
+    "submit": "Save Changes"
+  },
+  "delete": {
+    "title": "Delete Entry",
+    "desc": "Are you sure you want to delete the entry for \"{name}\"?",
+    "confirm": "Yes, Delete",
+    "cancel": "Cancel"
+  },
+  "table": {
+    "volunteerName": "Contributor",
+    "description": "Description",
+    "amount": "Amount",
+    "admin": "Added By",
+    "date": "Date",
+    "actions": "Actions"
+  }
+},
+
+"budgetWithdraw": {
+  "title": "Expenses Management",
+  "desc": "Track withdrawals and expenses",
+  "empty": "No expenses recorded yet.",
+  "noResults": "No entries match your search.",
+  "searchPlaceholder": "Search by name or description...",
+  "addBtn": "Add Expense",
+  "totalExpenses": "Total Expenses",
+  "currency": "EGP",
+  "entries": "entries",
+  "validation": {
+    "volunteerNameRequired": "Expense name is required",
+    "volunteerNameMin": "Name must be at least 2 characters",
+    "descriptionRequired": "Description is required",
+    "descriptionMin": "Description must be at least 3 characters",
+    "withdrawRequired": "Amount is required",
+    "withdrawPositive": "Amount must be a positive number",
+    "withdrawMin": "Amount must be at least 1",
+    "classRequired": "Class is required"
+  },
+  "add": {
+    "title": "Add Expense",
+    "volunteerName": "Expense Name",
+    "volunteerNamePlaceholder": "e.g. Supplies Purchase",
+    "description": "Description",
+    "descriptionPlaceholder": "What is this expense for?",
+    "withdraw": "Amount (EGP)",
+    "withdrawPlaceholder": "e.g. 2000",
+    "class": "Class",
+    "classPlaceholder": "Select a class...",
+    "submit": "Add Expense"
+  },
+  "edit": {
+    "title": "Edit Expense",
+    "submit": "Save Changes"
+  },
+  "delete": {
+    "title": "Delete Expense",
+    "desc": "Are you sure you want to delete the expense for \"{name}\"?",
+    "confirm": "Yes, Delete",
+    "cancel": "Cancel"
+  },
+  "table": {
+    "volunteerName": "Expense Name",
+    "description": "Description",
+    "amount": "Amount",
+    "class": "Class",
+    "admin": "Added By",
+    "date": "Date",
+    "actions": "Actions"
+  }
+},
+    "members": {
+      "title": "Members Management",
+      "desc": "Manage church members and their status",
+      "comingSoon": "Members management is coming soon..."
+    },
+    "users": {
+  "title": "Users Management",
+  "desc": "Manage users, approvals, and roles",
+  "pendingTitle": "Pending Approvals",
+  "approvedTitle": "Approved Users",
+  "noPending": "No pending users",
+  "noApproved": "No approved users yet",
+  "approve": "Approve",
+  "removeApproval": "Remove",
+  "table": {
+    "name": "Name",
+    "username": "Username",
+    "roles": "Roles",
+    "addRole": "Add Role",
+    "actions": "Actions"
+  },
+  "removeDialog": {
+    "title": "Remove Approval",
+    "desc": "Are you sure you want to remove approval for this user? They will need to be approved again.",
+    "confirm": "Yes, Remove",
+    "cancel": "Cancel"
+  }
+},
+    "rolesPermissions": {
+      "title": "Roles & Permissions",
+      "desc": "Manage roles and access control",
+      "comingSoon": "Roles management is coming soon..."
+    },
+    "profile": {
+  "title": "Church Profile",
+  "desc": "Manage your church information and share QR code",
+  "error": "Failed to load profile data",
+  "orgName": {
+    "title": "Church Name"
+  },
+  "image": {
+  "title": "Church Logo",
+  "upload": "Upload",
+  "delete": "Delete",
+  "change": "Change Image",
+  "uploading": "Uploading...",
+  "dragDrop": "Drag & drop image here or click to upload",
+  "dropHere": "Drop image here!",
+  "formats": "PNG, JPG, WEBP (Max 5MB)",
+  "invalidType": "Please upload an image file",
+  "tooLarge": "Image must be less than 5MB",
+  "uploadSuccess": "Image uploaded successfully!",
+  "deleteSuccess": "Image deleted successfully!"
+},
+  "qr": {
+    "title": "Church QR Code",
+    "description": "Share this QR code with members to join your church",
+    "copy": "Copy Link",
+    "download": "Download",
+    "share": "Share",
+    "copied": "Link copied!",
+    "copyError": "Failed to copy link",
+    "shareText": "Join our church using this link"
+  },
+  
+  "userProfile": {
+  "title": "My Profile",
+  "desc": "Manage your personal information",
+  "username": "Username",
+  "name": "Full Name",
+  "email": "Email",
+  "roles": "Roles",
+  "photo": "Profile Photo"
+}
+},
+"festivalModule": {
+  "title": "Festival Management",
+  "desc": "Manage church festivals, teams, members, and scoring",
+  "tabs": {
+    "festivals": "Festivals",
+    "classifications": "Classifications",
+    "teams": "Teams",
+    "members": "Members",
+    "points": "Points"
+  },
+  "common": {
+    "cancel": "Cancel",
+    "save": "Save",
+    "actions": "Actions"
+  },
+  "festivals": {
+    "label": "Church Festivals",
+    "search": "Search festivals...",
+    "add": "Add Festival",
+    "edit": "Edit Festival",
+    "name": "Festival Name",
+    "namePlaceholder": "e.g. Christmas Celebration",
+    "empty": "No festivals yet.",
+    "deleteDesc": "Are you sure you want to delete \"{name}\"?"
+  },
+  "classifications": {
+    "label": "Classifications",
+    "search": "Search classifications...",
+    "add": "Add Classification",
+    "edit": "Edit Classification",
+    "name": "Classification Name",
+    "namePlaceholder": "e.g. Age Group A",
+    "empty": "No classifications yet.",
+    "deleteDesc": "Are you sure you want to delete \"{name}\"?"
+  },
+  "teams": {
+    "label": "Festival Teams",
+    "search": "Search teams...",
+    "add": "Add Team",
+    "edit": "Edit Team",
+    "name": "Team Name",
+    "namePlaceholder": "e.g. Team Alpha",
+    "festival": "Festival",
+    "selectFestival": "Select festival...",
+    "classification": "Classification",
+    "selectClassification": "Select classification...",
+    "empty": "No teams yet.",
+    "winner": "Winner",
+    "markWinner": "Mark Winner",
+    "deleteDesc": "Are you sure you want to delete team \"{name}\"?"
+  },
+  "members": {
+    "selectTeam": "Select Team",
+    "chooseTeam": "Choose a team...",
+    "selectUser": "Select a user...",
+    "empty": "No members in this team.",
+    "leader": "Leader"
+  },
+  "points": {
+    "name": "Name",
+    "topic": "Topic",
+    "preparation": "Prep",
+    "visit": "Visit",
+    "classAttend": "Class",
+    "meeting": "Meeting",
+    "festivalWin": "Win",
+    "function": "Func",
+    "leadWin": "Lead",
+    "status": "Status",
+    "active": "Active",
+    "activate": "Activate",
+    "empty": "No point configurations yet."
+  }
+},
+"children": {
+  "title": "Children Management",
+  "filterAll": "All",
+"filterBoys": "Boys",
+"filterGirls": "Girls",
+"filterNeedy": "Needs support",
+"countLabel": "Children",
+"sessions": "sessions",
+  "desc": "Manage children records and class assignments",
+  "empty": "No children added yet.",
+  "noResults": "No children match your search.",
+  "searchPlaceholder": "Search by child name...",
+  "addBtn": "Add Child",
+  "count": "{count} children",
+  "boy": "Boy",
+  "girl": "Girl",
+  "needy": "Needs Support",
+  "add": {
+    "title": "Add New Child",
+    "subtitle": "Register New Student",
+"cancel": "Cancel",
+"typeNeedyDesc": "Servants will be notified to follow up.",
+    "name": "Child Name",
+    "namePlaceholder": "Enter child's name",
+    "gender": "Gender",
+    "boy": "Boy",
+    "girl": "Girl",
+    "class": "Class",
+    "classPlaceholder": "Select a class...",
+    "description": "Description / Notes",
+    "descriptionPlaceholder": "Any notes about the child...",
+    "typeNeedy": "This child needs special support",
+    "submit": "Add Child"
+  },
+  "edit": {
+    "title": "Edit Child",
+    "submit": "Save Changes"
+  },
+  "delete": {
+    "title": "Delete Child",
+    "permanent": "Permanent Action",
+"descDetailed": "You're about to delete {name}. This will also remove all attendance history for this child. This action cannot be undone.",
+"typeConfirm": "Type",
+"toConfirm": "to confirm",
+    "desc": "Are you sure you want to delete \"{name}\"? This cannot be undone.",
+    "confirm": "Yes, Delete",
+    "cancel": "Cancel"
+  }
+},
+    "settings": {
+      "title": "Settings",
+      "desc": "System configuration",
+      "comingSoon": "Settings page is coming soon..."
+    },
+    "seasons": {
+  "title": "Seasons Management",
+  "desc": "Manage service seasons — each season is required for all operations",
+  "empty": "No seasons created yet. Add your first season to get started.",
+  "active": "Active",
+  "addBtn": "Add Season",
+  "editBtn": "Edit",
+  "activateBtn": "Activate",
+  "deleteBtn": "Delete",
+  "add": {
+    "title": "Add New Season",
+    "name": "Season Name",
+    "namePlaceholder": "e.g. St. Demiana Primary 2026",
+    "password": "Season Password",
+    "passwordPlaceholder": "Enter a strong password",
+    "submit": "Create Season"
+  },
+  "edit": {
+    "title": "Edit Season",
+    "password": "New Password",
+    "passwordPlaceholder": "Enter a new password",
+    "submit": "Save Changes"
+  },
+  "activate": {
+    "title": "Activate Season",
+    "desc": "Activate \"{name}\" as the current season? All operations will use this season.",
+    "password": "Season Password",
+    "passwordPlaceholder": "Enter the season password",
+    "submit": "Activate Season"
+  },
+  "delete": {
+    "title": "Delete Season",
+    "desc": "Are you sure you want to delete \"{name}\"? This cannot be undone.",
+    "confirm": "Yes, Delete",
+    "cancel": "Cancel"
+  }
+},
+"receive": {
+  "title": "Receivables",
+  "desc": "Track money received from classes and services",
+  "empty": "No receivables recorded yet.",
+  "noResults": "No entries match your search.",
+  "searchPlaceholder": "Search by name or description...",
+  "addBtn": "Add Entry",
+  "totalReceived": "Total Received",
+  "currency": "EGP",
+  "entries": "entries",
+  "add": {
+    "title": "Add Receivable",
+    "subtitle": "New Entry",
+    "recieveFrom": "Received From",
+    "recieveFromPlaceholder": "e.g. Class A collection",
+    "description": "Description",
+    "descriptionPlaceholder": "What is this for?",
+    "moneyAmount": "Amount (EGP)",
+    "moneyAmountPlaceholder": "e.g. 500",
+    "cancel": "Cancel",
+    "submit": "Add Entry"
+  },
+  "edit": {
+    "title": "Edit Entry",
+    "submit": "Save Changes"
+  },
+  "delete": {
+    "desc": "Are you sure you want to delete the entry from \"{name}\"?"
+  },
+  "table": {
+    "recieveFrom": "From",
+    "description": "Description",
+    "amount": "Amount",
+    "class": "Class",
+    "date": "Date",
+    "actions": "Actions"
+  }
+},
+
+"attendance": {
+  "title": "Attendance",
+  "ofClass": "of class",
+"followUp": "follow up after class",
+"stillToRecord": "still to record",
+"students": "students",
+"sortedByName": "Sorted by name",
+"backToAttendance": "Back to attendance",
+"childNotFound": "Child not found",
+"needsSupport": "Needs support",
+"detail": {
+  "totalSessions": "Total Sessions",
+  "present": "Present",
+  "absent": "Absent",
+  "rate": "Attendance Rate",
+  "history": "Attendance History",
+  "noRecords": "No attendance records yet"
+},
+  "desc": "Track daily attendance for children",
+  "empty": "No children to show.",
+  "noResults": "No children match your search.",
+  "searchPlaceholder": "Search by child name...",
+  "allClasses": "All Classes",
+  "present": "Present",
+  "absent": "Absent",
+  "unmarked": "Unmarked",
+  "presentLabel": "Present",
+  "absentLabel": "Absent",
+  "tapToMark": "Tap to mark",
+  "notMarked": "Not marked",
+  "markAllPresent": "All Present",
+  "markAllAbsent": "All Absent",
+  "saveAll": "Save Attendance",
+  "noChanges": "No changes to save.",
+  "boy": "Boy",
+  "girl": "Girl",
+  "prev": "Previous",
+  "next": "Next",
+  "table": {
+    "name": "Child Name",
+    "class": "Class",
+    "gender": "Gender",
+    "status": "Status",
+    "action": "Save"
+  }
+},
+    "notifications": {
+      "pagination": {
+        "prev": "Previous",
+        "next": "Next"
+      }
+    },
+    "listings": {
+      "searchPlaceholder": "Search..."
+    }
+  }
+}
