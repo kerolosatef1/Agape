@@ -115,10 +115,14 @@
         "password": {
           "label": "Password",
           "placeholder": "Enter your password",
-          "validation": {
-            "required": "Password is required",
-            "validation-msg": "Password must be at least 6 characters"
-          }
+          "validation": { 
+  "required": "Password is required", 
+  "min": "Password must be at least 8 characters",
+  "uppercase": "Must contain an uppercase letter",
+  "lowercase": "Must contain a lowercase letter",
+  "number": "Must contain a number",
+  "symbol": "Must contain a symbol (!@#$%...)"
+}
         },
         "loginButton": "Sign In"
       },
