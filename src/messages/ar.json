@@ -49,6 +49,18 @@
     "save": "حفظ",
     "cancel": "إلغاء",
     "delete": "حذف",
+    "amountDialog": {
+  "increaseTitle": "زيادة المخزون",
+  "decreaseTitle": "تقليل المخزون",
+  "addStock": "إضافة للمخزون",
+  "removeStock": "خصم من المخزون",
+  "increaseDesc": "أدخل الكمية التي تريد إضافتها للمخزون.",
+  "decreaseDesc": "أدخل الكمية التي تريد خصمها من المخزون.",
+  "placeholder": "مثال: 10",
+  "cancel": "إلغاء",
+  "confirmAdd": "إضافة",
+  "confirmRemove": "خصم"
+},
     "edit": "تعديل",
     "add": "إضافة",
     "gender": "النوع",

@@ -48,6 +48,18 @@
   "common": {
     "goHome": "Go Home",
     "gender": "Gender",
+    "amountDialog": {
+  "increaseTitle": "Increase Stock",
+  "decreaseTitle": "Decrease Stock",
+  "addStock": "Add to Stock",
+  "removeStock": "Remove from Stock",
+  "increaseDesc": "Enter the amount you want to add to stock.",
+  "decreaseDesc": "Enter the amount you want to remove from stock.",
+  "placeholder": "e.g. 10",
+  "cancel": "Cancel",
+  "confirmAdd": "Add",
+  "confirmRemove": "Remove"
+},
 "boy": "Boy",
 "girl": "Girl",
 "class": "Class",
