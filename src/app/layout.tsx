@@ -17,11 +17,6 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Agápē",
   description: "Orthodox Church Service Management System",
-   icons: {
-    icon: "/favicon.ico",        
-    shortcut: "/favicon.ico",   
-    apple: "/apple-icon.ico",    
-  },
 };
 
 function resolveLocale(raw: string | undefined): Locale {

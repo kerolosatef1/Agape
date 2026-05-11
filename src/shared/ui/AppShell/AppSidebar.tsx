@@ -1,6 +1,6 @@
 "use client";
 
-import { ScrollArea } from "@/components/ui/scroll-area";
+import { ScrollArea } from "@/src/shared/ui/scroll-area";
 import NavItem from "./NavItem";
 import { NAV_ITEMS } from "@/src/shared/config/navigation";
 import { useTranslations } from "next-intl";
@@ -25,7 +25,8 @@ export default function AppSidebar({
   );
 
   return (
-    <div className="flex h-full w-full flex-col">
+    
+    <div className="flex-1 px-3 py-4 space-y-1 overflow-y-auto">
       {/* Logo — desktop */}
       <div className="hidden lg:flex items-center gap-3 px-6 py-5">
         <div

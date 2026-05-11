@@ -9,6 +9,7 @@ export const api = axios.create({
     typeof window === "undefined"
       ? process.env.BACKEND_BASE_URL
       : process.env.NEXT_PUBLIC_API_BASE_URL,
+      timeout: 10000, 
 });
 
 api.interceptors.request.use(async (config) => {
