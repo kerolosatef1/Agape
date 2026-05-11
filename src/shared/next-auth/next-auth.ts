@@ -4,6 +4,7 @@ import { api } from "@/src/shared/lib/axios/axios.instance";
 
 export const authOptions: NextAuthOptions = {
   secret: process.env.NEXTAUTH_SECRET,
+  
   providers: [
     CredentialsProvider({
       name: "Credentials",

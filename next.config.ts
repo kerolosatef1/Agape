@@ -15,9 +15,11 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
     remotePatterns: [
-      { protocol: "https", hostname: "images.unsplash.com" },
-      { protocol: "https", hostname: "via.placeholder.com" },
-    ],
+      {
+        protocol: "https",
+        hostname: "church-service.runasp.net",
+      },
+    ]
   },
   experimental: {
     serverActions: {

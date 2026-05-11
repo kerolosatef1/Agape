@@ -21,7 +21,7 @@ export default async function middleware(req: NextRequest) {
   if (isAuthPage) {
     const token = await getToken({ req, secret });
     if (token) {
-      return NextResponse.redirect(new URL("/dashboard", req.url));
+      return NextResponse.redirect(new URL("/profile", req.url));
     }
     return intlMiddleware(req);
   }
