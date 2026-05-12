@@ -1,0 +1,32 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a1a6e"></stop>
+      <stop offset="1" stop-color="#0d0d4a"></stop>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f5d060"></stop>
+      <stop offset="1" stop-color="#c4943d"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="225" fill="url(#bg)"></rect>
+  
+  <circle cx="320" cy="280" r="380" fill="#ffffff" opacity="0.05"></circle>
+
+  
+  <g transform="translate(12,12) scale(1.0)">
+    
+    <path d="M180 470 L180 720 Q180 740 200 745 L490 770 L490 530 Q480 510 460 505 L230 470 Q200 466 180 470 Z" fill="url(#goldGrad)"></path>
+    <path d="M250 478 L490 530 L490 770 L250 740 Z" fill="#f5d060" opacity="0.85"></path>
+    <path d="M280 545 L470 580 M280 590 L470 625 M280 635 L470 670 M280 680 L470 715" stroke="#0d0d4a" stroke-width="6" stroke-linecap="round" opacity="0.35" fill="none"></path>
+    
+    <path d="M820 470 L820 720 Q820 740 800 745 L510 770 L510 530 Q520 510 540 505 L770 470 Q800 466 820 470 Z" fill="url(#goldGrad)"></path>
+    <path d="M750 478 L510 530 L510 770 L750 740 Z" fill="#f5d060" opacity="0.85"></path>
+    <path d="M720 545 L530 580 M720 590 L530 625 M720 635 L530 670 M720 680 L530 715" stroke="#0d0d4a" stroke-width="6" stroke-linecap="round" opacity="0.35" fill="none"></path>
+    <path d="M490 530 L500 525 L510 530 L510 770 L500 775 L490 770 Z" fill="#0d0d4a" opacity="0.4"></path>
+    
+    <rect x="468" y="180" width="64" height="600" rx="6" fill="#ffffff"></rect>
+    <rect x="340" y="320" width="320" height="64" rx="6" fill="#ffffff"></rect>
+  </g>
+</svg>
